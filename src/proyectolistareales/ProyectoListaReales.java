@@ -53,8 +53,17 @@ public class ProyectoListaReales {
                 case 8:
                     ordenarDescendente();
                     break;
+                case 9:
+                    abrir();
+                    break;
+                case 10:
+                    guardar();
+                    break;
+                case 11:
+                    salir();
+                    break;
             }
-        } while (opcion != 9);
+        } while (opcion != 11);
     }
     public void ingresarValor() {
         Scanner entrada = new Scanner(System.in);
@@ -135,6 +144,18 @@ public class ProyectoListaReales {
         Comparator<Double> comparador = Collections.reverseOrder();
         Collections.sort(listaReales, comparador);
         mostrarLista();
+    }
+
+    private void abrir() {
+        
+    }
+
+    private void guardar() {
+        System.out.println("«Se guardó con exito»");
+    }
+
+    private void salir() {
+        
     }
 
 }
